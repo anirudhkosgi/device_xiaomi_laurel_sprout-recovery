@@ -38,6 +38,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
    	export TW_DEFAULT_LANGUAGE="en"
 	export LC_ALL="C"
  	export ALLOW_MISSING_DEPENDENCIES=true
+ 	export OF_TARGET_DEVICES="laurel_sprout"
 	export TARGET_DEVICE_ALT="laurel_sprout"
 	export OF_AB_DEVICE=1
 	export OF_USE_GREEN_LED=0
@@ -49,6 +50,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER=1
 	export OF_NO_TREBLE_COMPATIBILITY_CHECK=1
 	export OF_NO_MIUI_PATCH_WARNING=1
+	export OF_FIX_DECRYPTION_ON_DATA_MEDIA=1
 	export FOX_USE_BASH_SHELL=1
 	export FOX_ASH_IS_BASH=1
 	export FOX_USE_TAR_BINARY=1
@@ -79,9 +81,9 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 
 	# R11.1 Settings
 	export FOX_VERSION="R12.1"
-	export OF_MAINTAINER="RealAkira"
+	export OF_MAINTAINER="PowerX-NOT & Noctowl709 "
 
-       # necessary to decrypt most violet ROMs
+       # necessary to decrypt most laurel_sprout ROMs
        export OF_FIX_DECRYPTION_ON_DATA_MEDIA=1
 
        # disable wrappedkey?
