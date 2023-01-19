@@ -19,14 +19,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/twrp/config/common.mk)
+$(call inherit-product, vendor/pb/config/common.mk)
 
 # Inherit from laurel_sprout device
 $(call inherit-product, device/xiaomi/laurel_sprout/device.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := laurel_sprout
-PRODUCT_NAME := twrp_laurel_sprout
+PRODUCT_NAME := omni_laurel_sprout
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi A3
 PRODUCT_MANUFACTURER := Xiaomi

@@ -137,10 +137,14 @@ TW_THEME := portrait_hdpi
 TW_EXCLUDE_APEX := true
 TW_EXTRA_LANGUAGES := true
 TW_INCLUDE_NTFS_3G := true
-TW_USE_TOOLBOX := true
+TW_FORCE_USE_BUSYBOX := true
 TW_INCLUDE_RESETPROP := true
 TW_INCLUDE_LIBRESETPROP := true
 TW_FRAMERATE := 60
+
+# PBRP
+PB_DISABLE_DEFAULT_DM_VERITY := true
+PB_TORCH_PATH := "/sys/class/leds/led:torch_0"
 
 # Debug
 TWRP_INCLUDE_LOGCAT := true

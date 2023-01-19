@@ -15,7 +15,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-     $(LOCAL_DIR)/twrp_laurel_sprout.mk
+     $(LOCAL_DIR)/omni_laurel_sprout.mk
      
 COMMON_LUNCH_CHOICES := \
-    twrp_laurel_sprout-eng     
+    omni_laurel_sprout-eng     
