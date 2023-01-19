@@ -65,8 +65,9 @@ BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 androidboot.console=ttyMSM0 ear
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_RAMDISK_OFFSET := 0x01000000
-TARGET_PREBUILT_KERNEL := device/xiaomi/laurel_sprout/prebuilt/zImage
-BOARD_PREBUILT_DTBOIMAGE := device/xiaomi/laurel_sprout/prebuilt/dtbo.img
+BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
+TARGET_KERNEL_SOURCE := kernel/xiaomi/laurel_sprout
+TARGET_KERNEL_CONFIG := vendor/laurel_sprout-perf_defconfig
 BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_INCLUDE_RECOVERY_DTBO := true
 BOARD_BOOTIMG_HEADER_VERSION := 1
